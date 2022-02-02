@@ -47,7 +47,8 @@ São poucas, mas temos umas importantes:
 
 ## Licensa
 ___
-General Public License 3.0 (GPL 3.0) 
+General Public License 3.0 (GPL 3.0)
+[https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html](https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html)
 **Software Aberto, Hell Yeah!**
 
 ### Os fundamentos da GPL
@@ -55,10 +56,10 @@ General Public License 3.0 (GPL 3.0)
 > Ninguém deve ser restrito pelo software que eles usam. 
 > **Existem quatro liberdades que todos os usuários devem ter:**
 
---- a liberdade de usar o software para qualquer finalidade,
---- a liberdade de mudar o software de acordo com suas necessidades,
---- a liberdade de compartilhar o software com seus amigos e vizinhos e
---- a liberdade de compartilhar as mudanças que você faz.
+01 - a liberdade de usar o software para qualquer finalidade,
+02 - a liberdade de mudar o software de acordo com suas necessidades,
+03 - a liberdade de compartilhar o software com seus amigos e vizinhos e
+04 - a liberdade de compartilhar as mudanças que você faz.
 ___
 Isso é tudo! 
 Bons Codes! #uhuuuuuuuu
