@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "a3a02e97-93c6-41f8-8640-77463ee2b2d5",
+		"name": "BCB Taxes - Ver: 1.0.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "taxes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/taxes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"taxes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "taxes - especific",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/taxes/dolar/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"taxes",
+						"dolar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "taxes - especific key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/taxes/dolar/compra/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"taxes",
+						"dolar",
+						"compra",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
