@@ -27,7 +27,7 @@ class BCBTaxes(Resource):
         return response
 
 
-    @app.route("/api/v1/taxes/<string:taxname>/<string:taxattr>", methods=['GET'])
+    @app.route("/api/v1/taxes/<string:taxname>/<string:taxattr>/", methods=['GET'])
     @app.route("/api/v1/taxes/<string:taxname>/", methods=['GET'])
     @app.route("/api/v1/taxes/", methods=['GET'])
     def taxes(taxname = 'f', taxattr = Empty):
