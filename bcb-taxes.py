@@ -10,7 +10,7 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
-class OpenTaxes(Resource):
+class BCBTaxes(Resource):
 
 
 
@@ -34,30 +34,30 @@ class OpenTaxes(Resource):
         if taxname is not None:
 
             dataTaxes = {
-                'ipca': OpenTaxes.getIPCA(),
-                'euro': OpenTaxes.getCurrency('euro'),
-                'dolar': OpenTaxes.getCurrency('dolar'),
-                'selic' : OpenTaxes.getSelic(),
+                'ipca': BCBTaxes.getIPCA(),
+                'euro': BCBTaxes.getCurrency('euro'),
+                'dolar': BCBTaxes.getCurrency('dolar'),
+                'selic' : BCBTaxes.getSelic(),
             }
 
             try: 
                 if taxname.lower() == 'f':
-                    return OpenTaxes.response(dataTaxes, 200)
+                    return BCBTaxes.response(dataTaxes, 200)
             except:
-                return OpenTaxes.response({
+                return BCBTaxes.response({
                     'error' : 'Internal server error'
                 }, 500)     
             
             try:
                 if taxattr is not Empty:
-                    return OpenTaxes.response({
+                    return BCBTaxes.response({
                         taxname : dataTaxes[taxname][taxattr]
                     }, 200)    
-                return OpenTaxes.response({
+                return BCBTaxes.response({
                     taxname : dataTaxes[taxname]
                 }, 200)
             except:
-                return OpenTaxes.response({
+                return BCBTaxes.response({
                     'tax' : 'invalid tax name!'
                 }, 500)
             
@@ -69,7 +69,7 @@ class OpenTaxes(Resource):
             jsonTaxes = json.loads(requests.get(os.getenv("SELIC_URL")).text)
             return str(jsonTaxes['conteudo'][0]['MetaSelic'])
         except:
-            return OpenTaxes.response({
+            return BCBTaxes.response({
                 'getSelic' : 'Internal eroor, check endpoint BCB.'
             }, 500)
 
@@ -93,7 +93,7 @@ class OpenTaxes(Resource):
             
             return dataEuro
         except:
-            return OpenTaxes.response({
+            return BCBTaxes.response({
                 'getCurrency' : 'Internal eroor, check endpoint BCB.'
             }, 500)
 
@@ -103,7 +103,7 @@ class OpenTaxes(Resource):
             jsonTaxes = json.loads(requests.get(os.getenv("IPCA_URL")).text)
             return str(jsonTaxes['conteudo'][0]['taxaInflacao'])
         except:
-            return OpenTaxes.response({
+            return BCBTaxes.response({
                 'getIPCA' : 'Internal eroor, check endpoint BCB.'
             }, 500)
 
@@ -111,15 +111,14 @@ class OpenTaxes(Resource):
 
     @app.errorhandler(HTTPException)
     def handle_exception(e):
-        logging.basicConfig(filename='OpenTaxesError.log', level=logging.ERROR)
+        logging.basicConfig(filename='BCBTaxesError.log', level=logging.ERROR)
         error = {
             "code": e.code,
             "name": e.name,
             "description": e.description,
         }
         logging.error(error)
-        return OpenTaxes.response(error, e.code)
-
+        return BCBTaxes.response(error, e.code)
 
     
 if __name__ == '__main__':

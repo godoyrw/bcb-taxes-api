@@ -26,7 +26,7 @@ Clone o repositpório
 
 ```sh
 cd cbc-taxes-api
-python3 OpenTaxes.py 
+python3 bcb-taxes.py 
 ```
 
 Para ambientes de produção...
