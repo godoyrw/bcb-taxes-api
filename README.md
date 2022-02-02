@@ -88,7 +88,7 @@ São poucas, mas temos umas importantes:
 | GitHub | [plugins/github/README.md][PlGh] |
 
 
-## Licensa
+## Licença
 ___
 General Public License 3.0 (GPL 3.0)
 Os fundamentos da GPL
