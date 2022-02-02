@@ -36,7 +36,7 @@ Para ambientes de produção...
 ```
 ## Uso
 ```py
-Request: http://127.0.0.1:5000/api/v1/taxes/
+Request: /api/v1/taxes/
 ```
 ```py
 Response:
@@ -57,7 +57,7 @@ Response:
 ```
 
 ```py
-Request: http://127.0.0.1:5000/api/v1/taxes/selic/
+Request: /api/v1/taxes/selic/
 ```
 ```py
 Response:
@@ -68,7 +68,7 @@ Response:
 }
 ```
 ```py
-http://127.0.0.1:5000/api/v1/taxes/dolar/compra/
+Request: /api/v1/taxes/dolar/compra/
 ```
 ```py
 Response:
