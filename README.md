@@ -99,6 +99,7 @@ Os fundamentos da GPL
 > 01 - a liberdade de usar o software para qualquer finalidade, 02 - a liberdade de mudar o software de acordo com suas necessidades, 03 - a liberdade de compartilhar o software com seus amigos e vizinhos e 04 - a liberdade de compartilhar as mudanças que você faz.
 
 [https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html](https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html)
+
 **Software Aberto, Hell Yeah!**
 ___
 Isso é tudo! 
