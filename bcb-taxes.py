@@ -120,7 +120,6 @@ class BCBTaxes(Resource):
         logging.error(error)
         return BCBTaxes.response(error, e.code)
 
-
     
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
