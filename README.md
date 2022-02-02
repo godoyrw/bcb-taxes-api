@@ -25,7 +25,7 @@ ___
 Clone o repositpório
 
 ```sh
-cd cbc-taxes-api
+cd bcb-taxes-api
 python3 bcb-taxes.py 
 ```
 
