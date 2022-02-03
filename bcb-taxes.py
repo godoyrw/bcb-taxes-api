@@ -110,7 +110,7 @@ class BCBTaxes(Resource):
 
 
     @app.errorhandler(HTTPException)
-    def handle_exception(e):
+    async def handle_exception(e):
         logging.basicConfig(filename='BCBTaxesError.log', level=logging.ERROR)
         error = {
             "code": e.code,
