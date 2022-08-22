@@ -12,8 +12,6 @@ api = Api(app)
 
 class BCBTaxes(Resource):
 
-
-
     def response(data, code):
         response = make_response(
             jsonify(
